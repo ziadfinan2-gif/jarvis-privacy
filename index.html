@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy for J.A.R.V.I.S. Personal AI Assistant">
+  <title>J.A.R.V.I.S. - Privacy Policy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1020;
+      color: #e5e7eb;
+      line-height: 1.7;
+      margin: 0;
+      padding: 40px 20px;
+    }
+    main {
+      max-width: 850px;
+      margin: auto;
+      background: #151d32;
+      padding: 35px;
+      border-radius: 14px;
+    }
+    h1, h2 { color: #60a5fa; }
+    h1 { font-size: 32px; }
+    a { color: #60a5fa; }
+    .updated { color: #9ca3af; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>J.A.R.V.I.S. Privacy Policy</h1>
+  <p class="updated">Last updated: November 7, 2026</p>
+
+  <h2>1. Introduction</h2>
+  <p>
+    J.A.R.V.I.S. is a Windows desktop personal AI assistant.
+    This policy explains how the application handles information
+    when you use its features.
+  </p>
+  <p>Privacy contact: <a href="mailto:Ziad.finan2@gmail.com">Ziad.finan2@gmail.com</a></p>
+
+  <h2>2. Information Stored Locally</h2>
+  <p>
+    J.A.R.V.I.S. may store conversation history, saved memories,
+    tasks, application settings, and Google authentication
+    information on your Windows device.
+  </p>
+  <p>
+    Local application data is stored under
+    <code>%LOCALAPPDATA%\JARVIS</code>. Certain sensitive files
+    are protected using Windows Data Protection API (DPAPI),
+    associated with your Windows account.
+  </p>
+
+  <h2>3. Google Sign-in</h2>
+  <p>
+    J.A.R.V.I.S. uses Google OAuth for account sign-in.
+    It requests basic profile information, including your
+    Google account identifier, email address, and profile name.
+    Your Google password is entered through Google's sign-in page,
+    not collected directly by J.A.R.V.I.S.
+  </p>
+  <p>
+    The application also requests access to Google's Drive
+    appDataFolder during sign-in, even when cloud synchronisation
+    is disabled.
+  </p>
+
+  <h2>4. Google Drive Synchronisation</h2>
+  <p>
+    Cloud synchronisation is optional. It requires the user to
+    enable the setting, select "Sync now", and confirm the action.
+  </p>
+  <p>When synchronisation is performed, J.A.R.V.I.S. can upload:</p>
+  <ul>
+    <li>Saved memories</li>
+    <li>Conversation history, limited to the latest 300 entries</li>
+    <li>Tasks</li>
+  </ul>
+  <p>
+    Application settings are not included. The backup is transferred
+    to Google's Drive appDataFolder over HTTPS. The backup is not
+    separately encrypted by J.A.R.V.I.S. before upload.
+  </p>
+  <p>
+    Disconnecting Google removes locally stored authentication
+    information. It does not automatically revoke Google's
+    authorization or delete an existing cloud backup.
+  </p>
+
+  <h2>5. Google Search and Web Research</h2>
+  <p>
+    When you request web research, J.A.R.V.I.S. may send your
+    search query to Google Search to retrieve information.
+  </p>
+  <p>
+    The application checks for certain common sensitive patterns
+    before submitting queries. These checks are not guaranteed
+    to identify every personal or sensitive detail.
+    Google processes search requests under its own privacy policies.
+  </p>
+
+  <h2>6. Local AI Processing with Ollama</h2>
+  <p>
+    J.A.R.V.I.S. supports local AI processing through Ollama,
+    accessed through your device's local address
+    <code>127.0.0.1</code>.
+  </p>
+  <p>
+    In this mode, prompts and conversation context are sent
+    to the local Ollama service rather than directly to a
+    hosted AI model by J.A.R.V.I.S. Downloading models requires
+    a connection to Ollama's model services.
+  </p>
+
+  <h2>7. Optional OpenAI Integration</h2>
+  <p>
+    J.A.R.V.I.S. also supports an optional OpenAI model.
+    When selected and confirmed, relevant requests and conversation
+    context may be sent to OpenAI. Google Search results may also
+    be included.
+  </p>
+  <p>
+    The application uses a pattern-based privacy check and sends
+    the request with the setting <code>store: false</code>.
+    This does not guarantee the provider's complete data-retention
+    practices. OpenAI processes submitted information under
+    its own privacy policies.
+  </p>
+
+  <h2>8. Analytics and Diagnostics</h2>
+  <p>
+    The reviewed application source contains no analytics,
+    telemetry, or crash-reporting upload functionality.
+    Some system information, such as resource usage and network
+    status, is collected locally for display in the application.
+    This statement does not cover Windows or other installed software.
+  </p>
+
+  <h2>9. Data Security</h2>
+  <p>
+    J.A.R.V.I.S. uses Windows DPAPI to protect certain local files
+    and HTTPS for Google service communications.
+    No security measure can guarantee absolute protection.
+    DPAPI does not prevent access by software already running
+    under the same Windows account.
+  </p>
+  <p>
+    Google Drive backup files are not separately encrypted
+    by J.A.R.V.I.S.
+  </p>
+
+  <h2>10. Data Deletion and Disconnection</h2>
+  <p>
+    Users can remove local J.A.R.V.I.S. data by closing the
+    application and deleting its local data folder.
+  </p>
+  <p>
+    Disconnecting Google removes locally stored authentication
+    information but does not automatically revoke Google's
+    authorization or delete cloud backups. Users should separately
+    delete their J.A.R.V.I.S. backup from Google Drive and revoke
+    the application's access through their Google Account settings.
+  </p>
+
+  <h2>11. Children's Privacy</h2>
+  <p>
+    Users should avoid submitting sensitive personal information
+    to external services unless they understand how those services
+    process it.
+  </p>
+
+  <h2>12. Policy Updates</h2>
+  <p>
+    This policy may be updated when application features or
+    data-handling practices change. The latest version will be
+    published on this webpage.
+  </p>
+
+  <h2>13. Contact</h2>
+  <p>
+    For privacy questions or concerns, contact:
+    <a href="mailto:Ziad.finan2@gmail.com">Ziad.finan2@gmail.com</a>
+  </p>
+</main>
+</body>
+</html>
